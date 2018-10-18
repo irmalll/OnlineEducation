@@ -1,0 +1,260 @@
+<html xmlns:th="http://www.thymeleaf.org">
+  <head th:fragment="htmlhead">
+    <meta charset="utf-8"></meta>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"></meta>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"></meta>
+    <meta name="description" content=""></meta>
+    <meta name="author" content=""></meta>
+    <title>包银授信申请</title>
+    <link th:href="@{/css/calendar.css}" rel="stylesheet"></link>
+    <link th:href="@{/css/semantic.min.css}" rel="stylesheet"></link>
+    
+</head>
+<body>
+<!--同存变更-->
+ <form action="#" th:action="@{/greeting}" th:object="${greeting}" method="post">
+<div class="ui bottom attached segment" style="margin-top: 20px">
+    <div class="ui aligned center page grid">
+        <div class="column">
+             <p><input type="submit" value="Submit" /> <input type="reset" value="Reset" /></p>
+
+            <div class="ui small form">
+                <div class="two fields">
+                    <div class="field">
+                        <label>申请流水号</label>
+                        <input placeholder="申请流水号" type="text"></input>
+                    </div>
+                    <div class="field">
+                        <label>渠道标识</label>
+                        <input placeholder="渠道标识" type="text"></input>
+                    </div>
+                </div>
+                <div class="two fields">
+                    <div class="field">
+                        <label>批次编号</label>
+                        <input placeholder="批次编号" type="text"></input>
+                    </div>
+                    <div class="field">
+                        <label>产品编号</label>
+                        <input placeholder="产品编号" type="text"></input>
+                    </div>
+                </div>
+                  <div class="two fields">
+                    <div class="field">
+                        <label>批次编号</label>
+                        <input placeholder="批次编号" type="text"></input>
+                    </div>
+                    <div class="field">
+                        <label>产品编号</label>
+                        <input placeholder="产品编号" type="text"></input>
+                    </div>
+                </div>
+                <div class="two fields">
+                    <div class="field">
+                        <label>客户姓名</label>
+                        <input placeholder="客户姓名" type="text"></input>
+                    </div>
+                    <div class="field">
+                        <label>证件类型</label>
+                        <input placeholder="证件类型" type="text"></input>
+                    </div>
+                </div>
+                <div class="two fields">
+                    <div class="field">
+                        <label>证件号码</label>
+                        <input placeholder="证件号码" type="text"></input>
+                    </div>
+                    <div class="field">
+                        <label>手机号码</label>
+                        <input placeholder="手机号码" type="text"></input>
+                    </div>
+                </div>
+                <div class="two fields">
+                    <div class="field">
+                        <label>国籍</label>
+                        <input placeholder="国籍" type="text"></input>
+                    </div>
+                    <div class="field">
+                        <label>生日</label>
+                        <input placeholder="生日" type="text"></input>
+                    </div>
+                </div>
+                <div class="two fields">
+                    <div class="field">
+                        <label>年龄</label>
+                        <input placeholder="年龄" type="text"></input>
+                    </div>
+                    <div class="field">
+                        <label>性别</label>
+                        <input placeholder="性别" type="text"></input>
+                    </div>
+                </div>
+                <div class="two fields">
+                    <div class="field">
+                        <label>用户邮箱</label>
+                        <input placeholder="用户邮箱" type="text"></input>
+                    </div>
+                    <div class="field">
+                        <label>QQ号</label>
+                        <input placeholder="QQ号" type="text"></input>
+                    </div>
+                </div>
+                 <div class="two fields">
+                    <div class="field">
+                        <label>婚姻状态</label>
+                        <input placeholder="婚姻状态" type="text"></input>
+                    </div>
+                    <div class="field">
+                        <label>最高学历</label>
+                        <input placeholder="最高学历" type="text"></input>
+                    </div>
+                </div>
+                 <div class="two fields">
+                    <div class="field">
+                        <label>户籍地址</label>
+                        <input placeholder="户籍地址" type="text"></input>
+                    </div>
+                    <div class="field">
+                        <label>联系地址省份</label>
+                        <input placeholder="联系地址省份" type="text"></input>
+                    </div>
+                </div>
+                 <div class="two fields">
+                    <div class="field">
+                        <label>联系地址市</label>
+                        <input placeholder="联系地址市" type="text"></input>
+                    </div>
+                    <div class="field">
+                        <label>联系地址区</label>
+                        <input placeholder="联系地址区" type="text"></input>
+                    </div>
+                </div>
+                 <div class="two fields">
+                    <div class="field">
+                        <label>详细联系地址</label>
+                        <input placeholder="详细联系地址" type="text"></input>
+                    </div>
+                    <div class="field">
+                        <label>职业</label>
+                        <input placeholder="职业" type="text"></input>
+                    </div>
+                </div>
+                 <div class="two fields">
+                    <div class="field">
+                        <label>借款信息</label>
+                        <input placeholder="借款信息" type="text"></input>
+                    </div>
+                    <div class="field">
+                        <label>单位信息</label>
+                        <input placeholder="单位信息" type="text"></input>
+                    </div>
+                </div>
+                 <div class="two fields">
+                    <div class="field">
+                        <label>配偶信息</label>
+                        <input placeholder="配偶信息" type="text"></input>
+                    </div>
+                    <div class="field">
+                        <label>紧急联系人信息</label>
+                        <input placeholder="紧急联系人信息" type="text"></input>
+                    </div>
+                </div>
+                
+                <div class="two fields">
+                    <div class="field">
+                        <label>借款银行卡信息</label>
+                        <input placeholder="借款银行卡信息" type="text"></input>
+                    </div>
+                    <div class="field">
+                        <label>渠道风控信息</label>
+                        <input placeholder="渠道风控信息" type="text"></input>
+                    </div>
+                </div>
+                <div class="two fields">
+                    <div class="field">
+                        <label>证件类型</label>
+                        <input placeholder="证件类型" type="text"></input>
+                    </div>
+                    <div class="field">
+                        <label>证件号码</label>
+                        <input placeholder="证件号码" type="text"></input>
+                    </div>
+                </div>
+                <div class="two fields">
+                    <div class="field">
+                        <label>配偶姓名</label>
+                        <input placeholder="配偶姓名" type="text"></input>
+                    </div>
+                    <div class="field">
+                        <label>移动电话</label>
+                        <input placeholder="移动电话" type="text"></input>
+                    </div>
+                </div>
+                 <div class="two fields">
+                    <div class="field">
+                        <label>配偶工作单位</label>
+                        <input placeholder="配偶工作单位" type="text"></input>
+                    </div>
+                    <div class="field">
+                        <label>现单位名称</label>
+                        <input placeholder="现单位名称" type="text"></input>
+                    </div>
+                </div>
+                <div class="two fields">
+                    <div class="field">
+                        <label>所在部门</label>
+                        <input placeholder="所在部门" type="text"></input>
+                    </div>
+                    <div class="field">
+                        <label>现单位性质</label>
+                        <input placeholder="现单位性质" type="text"></input>
+                    </div>
+                </div>
+                <div class="two fields">
+                    <div class="field">
+                        <label>单位所属行业</label>
+                        <input placeholder="单位所属行业" type="text"></input>
+                    </div>
+                    <div class="field">
+                        <label>职称</label>
+                        <input placeholder="职称" type="text"></input>
+                    </div>
+                </div>
+                 <div class="two fields">
+                    <div class="field">
+                        <label>职务</label>
+                        <input placeholder="职务" type="text"></input>
+                    </div>
+                    <div class="field">
+                        <label>现单位地址省</label>
+                        <input placeholder="现单位地址省" type="text"></input>
+                    </div>
+                </div>
+                 <div class="two fields">
+                    <div class="field">
+                        <label>现单位地址市</label>
+                        <input placeholder="现单位地址市" type="text"></input>
+                    </div>
+                    <div class="field">
+                        <label>职称</label>
+                        <input placeholder="职称" type="text"></input>
+                    </div>
+                </div>
+                 <div class="two fields">
+                    <div class="field">
+                        <label>单位所属行业</label>
+                        <input placeholder="单位所属行业" type="text"></input>
+                    </div>
+                    <div class="field">
+                        <label>职称</label>
+                        <input placeholder="职称" type="text"></input>
+                    </div>
+                </div>
+        
+            </div>
+        </div>
+    </div>
+</div>
+</form>
+</body>
+</html>

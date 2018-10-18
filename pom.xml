@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0             http://maven.apache.org/xsd/maven-4.0.0.xsd ">
+    <modelVersion>4.0.0</modelVersion>
+ 	<groupId>com.yucheng</groupId>
+	<artifactId>OnlineEducation</artifactId>
+	<version>0.0.1</version>
+	<packaging>pom</packaging>
+    <modules>
+        <!-- 前置组件 -->
+        <module>SodaEnglish</module>
+        
+		
+		
+		
+    </modules>
+    <properties>
+        <JDK_version>1.7</JDK_version>
+        <file_encoding>UTF-8</file_encoding>
+        <javax_servlet_version>3.1.0</javax_servlet_version>
+        <!-- Common  libs -->
+        <!-- Spring Framework -->
+        <springfw_bom_version>4.2.5.RELEASE</springfw_bom_version>
+        <!-- Netty -->
+        <netty_version>3.2.10.Final</netty_version>
+        <!-- DDP Libs -->
+        <ddp_bom_version>1.0.1</ddp_bom_version>
+        <dubbo_sttx_version>1.0.1</dubbo_sttx_version>
+        <!-- Maven -->
+        <maven_compiler_plugin_version>3.3</maven_compiler_plugin_version>
+        <maven_jar_plugin_version>2.6</maven_jar_plugin_version>
+        <maven_war_plugin_version>2.6</maven_war_plugin_version>
+        <maven_install_plugin_version>2.5.2</maven_install_plugin_version>
+        <maven_deploy_plugin_version>2.8.2</maven_deploy_plugin_version>
+        <maven_surefire_plugin_version>2.14.1</maven_surefire_plugin_version>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<spring.boot.version>1.5.6.RELEASE</spring.boot.version>
+		<com.alibaba.dubbo.version>2.5.3</com.alibaba.dubbo.version>
+		<org.apache.zookeeper.version>3.4.6</org.apache.zookeeper.version>
+		<com.github.sgroschupf.zkclient.version>0.1</com.github.sgroschupf.zkclient.version>
+
+        <!-- <skip_maven_deploy>false</skip_maven_deploy> -->
+        <updateReleaseInfo>true</updateReleaseInfo>
+        <project.build.sourceEncoding>${file_encoding}</project.build.sourceEncoding>
+        <usp-version>1.0.1</usp-version>
+    </properties>
+    <dependencyManagement>
+        <dependencies>
+            <!-- Common libs -->
+            <dependency>
+                <groupId>javax.servlet</groupId>
+                <artifactId>javax.servlet-api</artifactId>
+                <version>${javax_servlet_version}</version>
+            </dependency>
+            <!-- Spring Framework -->
+            <dependency>
+                <groupId>org.springframework</groupId>
+                <artifactId>spring-framework-bom</artifactId>
+                <version>${springfw_bom_version}</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+            <!-- Netty -->
+            <dependency>
+                <groupId>org.jboss.netty</groupId>
+                <artifactId>netty</artifactId>
+                <version>${netty_version}</version>
+            </dependency>
+            <!-- DDP inner libs -->
+            <dependency>
+                <groupId>com.sttx.ddp</groupId>
+                <artifactId>ddp</artifactId>
+                <version>${ddp_bom_version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.alibaba</groupId>
+                <artifactId>dubbo-sttx</artifactId>
+                <version>${dubbo_sttx_version}</version>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
+    <build>
+        <pluginManagement>
+            <plugins>
+                <plugin>
+                    <groupId>org.apache.maven.plugins</groupId>
+                    <artifactId>maven-jar-plugin</artifactId>
+                    <version>${maven_jar_plugin_version}</version>
+                </plugin>
+                <plugin>
+                    <groupId>org.apache.maven.plugins</groupId>
+                    <artifactId>maven-war-plugin</artifactId>
+                    <version>${maven_war_plugin_version}</version>
+                </plugin>
+                <plugin>
+                    <groupId>org.apache.maven.plugins</groupId>
+                    <artifactId>maven-install-plugin</artifactId>
+                    <version>${maven_install_plugin_version}</version>
+                </plugin>
+                <plugin>
+                    <groupId>org.apache.maven.plugins</groupId>
+                    <artifactId>maven-deploy-plugin</artifactId>
+                    <version>${maven_deploy_plugin_version}</version>
+                </plugin>
+                <!-- 编译插件 -->
+                <plugin>
+                    <groupId>org.apache.maven.plugins</groupId>
+                    <artifactId>maven-compiler-plugin</artifactId>
+                    <version>${maven_compiler_plugin_version}</version>
+                    <configuration>
+                        <fork>true</fork>
+                        <source>${JDK_version}</source>
+                        <target>${JDK_version}</target>
+                        <compilerVersion>${JDK_version}</compilerVersion>
+                        <encoding>${file_encoding}</encoding>
+                        <meminitial>128m</meminitial>
+                        <maxmem>512m</maxmem>
+                    </configuration>
+                </plugin>
+                <!--This plugin's configuration is used to store Eclipse m2e settings
+                    only. It has no influence on the Maven build itself. -->
+                <plugin>
+                    <groupId>org.eclipse.m2e</groupId>
+                    <artifactId>lifecycle-mapping</artifactId>
+                    <version>1.0.0</version>
+                    <configuration>
+                        <lifecycleMappingMetadata>
+                            <pluginExecutions>
+                                <pluginExecution>
+                                    <pluginExecutionFilter>
+                                        <groupId>org.apache.maven.plugins</groupId>
+                                        <artifactId>maven-dependency-plugin</artifactId>
+                                        <versionRange>[2.1,)</versionRange>
+                                        <goals>
+                                            <goal>unpack</goal>
+                                        </goals>
+                                    </pluginExecutionFilter>
+                                    <action>
+                                        <ignore/>
+                                    </action>
+                                </pluginExecution>
+                            </pluginExecutions>
+                        </lifecycleMappingMetadata>
+                    </configuration>
+                </plugin>
+                <plugin>
+                    <groupId>org.apache.maven.plugins</groupId>
+                    <artifactId>maven-surefire-plugin</artifactId>
+                    <version>${maven_surefire_plugin_version}</version>
+                    <configuration>
+                        <argLine>-XX:-UseSplitVerifier</argLine>
+                    </configuration>
+                </plugin>
+            </plugins>
+        </pluginManagement>
+    </build>
+</project>

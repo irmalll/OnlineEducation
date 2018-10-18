@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dubbo="http://code.alibabatech.com/schema/dubbo"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans  
+    http://www.springframework.org/schema/beans/spring-beans.xsd  
+    http://code.alibabatech.com/schema/dubbo  
+    http://code.alibabatech.com/schema/dubbo/dubbo.xsd">
+
+	<!-- 提供方应用信息，用于计算依赖关系 -->
+	<dubbo:application name="${dubbo.application.name}" />
+
+	<!-- 注册中心暴露服务地址 -->
+	<!-- <dubbo:registry address="multicast://224.5.6.7:1234" /> -->
+
+
+     <!--  <dubbo:registry address="zookeeper://10.162.1.101:2181?backup=10.162.1.102:2181,10.162.1.103:2181" timeout="50000" /> -->    
+     <dubbo:registry address="zookeeper://10.0.248.215:2181?backup=10.0.248.216:2181,10.0.248.217:2181" timeout="50000" />  
+	  	
+	<!-- 暴露服务 -->
+	<dubbo:protocol name="${dubbo.protocol.name}" port="${dubbo.protocol.port}" />
+	
+	 <!-- 用户服务 -->
+    <dubbo:reference id="jingdongService" interface="com.yucheng.tps.jingdong.service.JdService" timeout="90000"  version="1.0.0"/>
+    <dubbo:reference id="baoyinService" interface="com.yucheng.tps.baoyin.service.BaoyinService" timeout="90000"  version="*"/>
+	
+	
+</beans> 
