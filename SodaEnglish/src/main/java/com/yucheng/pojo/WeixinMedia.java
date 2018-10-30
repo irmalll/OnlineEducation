@@ -1,12 +1,7 @@
 package com.yucheng.pojo;
 
 
-/**
- * ý���ļ���Ϣ
- * 
- * @author liufeng
- * @date 2013-11-09
- */
+
 public class WeixinMedia {
 	// ý���ļ�����
 	private String type;

@@ -26,51 +26,28 @@ import com.yucheng.core.req.VoiceMessage;
 import com.yucheng.core.resp.Article;
 import com.yucheng.core.resp.MusicMessage;
 import com.yucheng.core.resp.NewsMessage;
-/**
- * ��Ϣ���?����
- * 
- * @author liufeng
- * @date 2013-09-15
- */
+
 public class MessageUtil {
-	// ������Ϣ���ͣ��ı�
 	public static final String REQ_MESSAGE_TYPE_TEXT = "text";
-	// ������Ϣ���ͣ�ͼƬ
 	public static final String REQ_MESSAGE_TYPE_IMAGE = "image";
-	// ������Ϣ���ͣ�����
 	public static final String REQ_MESSAGE_TYPE_VOICE = "voice";
-	// ������Ϣ���ͣ���Ƶ
 	public static final String REQ_MESSAGE_TYPE_VIDEO = "video";
-	// ������Ϣ���ͣ�����λ��
 	public static final String REQ_MESSAGE_TYPE_LOCATION = "location";
-	// ������Ϣ���ͣ�����
 	public static final String REQ_MESSAGE_TYPE_LINK = "link";
 
-	// ������Ϣ���ͣ��¼�����
 	public static final String REQ_MESSAGE_TYPE_EVENT = "event";
 
-	// �¼����ͣ�subscribe(����)
 	public static final String EVENT_TYPE_SUBSCRIBE = "subscribe";
-	// �¼����ͣ�unsubscribe(ȡ����)
 	public static final String EVENT_TYPE_UNSUBSCRIBE = "unsubscribe";
-	// �¼����ͣ�scan(�û��ѹ�עʱ��ɨ�������ά��)
 	public static final String EVENT_TYPE_SCAN = "scan";
-	// �¼����ͣ�LOCATION(�ϱ�����λ��)
 	public static final String EVENT_TYPE_LOCATION = "LOCATION";
-	// �¼����ͣ�CLICK(�Զ���˵�)
 	public static final String EVENT_TYPE_CLICK = "CLICK";
 
-	// ��Ӧ��Ϣ���ͣ��ı�
 	public static final String RESP_MESSAGE_TYPE_TEXT = "text";
-	// ��Ӧ��Ϣ���ͣ�ͼƬ
 	public static final String RESP_MESSAGE_TYPE_IMAGE = "image";
-	// ��Ӧ��Ϣ���ͣ�����
 	public static final String RESP_MESSAGE_TYPE_VOICE = "voice";
-	// ��Ӧ��Ϣ���ͣ���Ƶ
 	public static final String RESP_MESSAGE_TYPE_VIDEO = "video";
-	// ��Ӧ��Ϣ���ͣ�����
 	public static final String RESP_MESSAGE_TYPE_MUSIC = "music";
-	// ��Ӧ��Ϣ���ͣ�ͼ��
 	public static final String RESP_MESSAGE_TYPE_NEWS = "news";
 
 	/**

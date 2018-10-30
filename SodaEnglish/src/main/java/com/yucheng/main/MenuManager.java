@@ -1,4 +1,4 @@
-/*
+
 package com.yucheng.main;
 
 
@@ -12,54 +12,56 @@ import com.yucheng.menu.ComplexButton;
 import com.yucheng.menu.Menu;
 import com.yucheng.menu.ViewButton;
 import com.yucheng.pojo.Token;
+import com.yucheng.util.AccessTokenUtil;
 import com.yucheng.util.CommonUtil;
 import com.yucheng.util.MenuUtil;
 
-*/
+
 /**
  * 菜单管理器类
  * 
  * @author liufeng
  * @date 2013-10-17
- *//*
+ */
 
 public class MenuManager {
 	private static Logger log = LoggerFactory.getLogger(MenuManager.class);
-
-	*/
+	
 /**
 	 * 定义菜单结构
 	 * 
 	 * @return
-	 *//*
+	 */
 
 	private static Menu getMenu() {
-		*/
-/*ClickButton btn11 = new ClickButton();
+		
+ClickButton btn11 = new ClickButton();
 		btn11.setName("立即报名");
 		btn11.setType("click");
-		btn11.setKey("buyNow");*//*
+		btn11.setKey("buyNow");
 
 
-		*/
-/*ClickButton btn12 = new ClickButton();
+		
+        ClickButton btn12 = new ClickButton();
 		btn12.setName("ITeye");
 		btn12.setType("click");
-		btn12.setKey("iteye");*//*
+		btn12.setKey("iteye");
 
 
 		ViewButton btn13 = new ViewButton();
 		btn13.setName("立即报名");
 		btn13.setType("view");
-		btn13.setUrl("http://atcxwe.natappfree.cc/buynow");
+		//btn13.setUrl("http://gy3hfj.natappfree.cc/redirect");
+		btn13.setUrl("http://soda.s1.natapp.cc/redirect");
+		//https://open.weixin.qq.com/connect/oauth2/authorize?appid=wxa2e858736eec406c&redirect_uri=gy3hfj.natappfree.cc/buynow?response_type=code&scope=snsapi_base&state=1&connect_redirect=1#wechat_redirect
 
 		ViewButton btn21 = new ViewButton();
 		btn21.setName("开始学习");
 		btn21.setType("view");
-		btn21.setUrl("http://m.jd.com");
+		btn21.setUrl("http://soda.s1.natapp.cc/info");
 
-		*/
-/*ViewButton btn22 = new ViewButton();
+		
+        ViewButton btn22 = new ViewButton();
 		btn22.setName("京东");
 		btn22.setType("view");
 		btn22.setUrl("http://m.jd.com");
@@ -72,14 +74,13 @@ public class MenuManager {
 		ViewButton btn24 = new ViewButton();
 		btn24.setName("当当网");
 		btn24.setType("view");
-		btn24.setUrl("http://m.dangdang.com");*//*
+		btn24.setUrl("http://m.dangdang.com");
 
-*/
-/*
+
 		ViewButton btn25 = new ViewButton();
 		btn25.setName("苏宁易购");
 		btn25.setType("view");
-		btn25.setUrl("http://m.suning.com");*//*
+		btn25.setUrl("http://m.suning.com");
 
 
 		ViewButton btn31 = new ViewButton();
@@ -92,16 +93,15 @@ public class MenuManager {
 		btn32.setType("view");
 		btn32.setUrl("http://www.yi588.com");
 
-*/
-/*		ComplexButton mainBtn1 = new ComplexButton();
+		ComplexButton mainBtn1 = new ComplexButton();
 		mainBtn1.setName("技术交流");
-		mainBtn1.setSub_button(new Button[] { btn11, btn12 });*//*
+		mainBtn1.setSub_button(new Button[] { btn11, btn12 });
 
 
-		*/
-/*ComplexButton mainBtn2 = new ComplexButton();
+		
+        ComplexButton mainBtn2 = new ComplexButton();
 		mainBtn2.setName("开始学习");
-		mainBtn2.setSub_button(new Button[] { btn21, btn22 });*//*
+		mainBtn2.setSub_button(new Button[] { btn21, btn22 });
 
 
 		ComplexButton mainBtn3 = new ComplexButton();
@@ -121,11 +121,11 @@ public class MenuManager {
 		String appSecret = "a3861d0bcf8ecc7965f265f6bca72723";
 
 		// 调用接口获取凭证
-		Token token = CommonUtil.getToken(appId, appSecret);
+		String token = AccessTokenUtil.getAccessToken();
 
 		if (null != token) {
 			// 创建菜单
-			boolean result = MenuUtil.createMenu(getMenu(), token.getAccessToken());
+			boolean result = MenuUtil.createMenu(getMenu(), token);
 
 			// 判断菜单创建结果
 			if (result)
@@ -135,4 +135,4 @@ public class MenuManager {
 		}
 	}
 }
-*/
+

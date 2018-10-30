@@ -1,0 +1,54 @@
+[INFO ][20181018 21:48:39,000][StartupInfoLogger:48] Starting Application on YohannZhang with PID 1376 (started by echo in C:\工作目录\D盘\需求开发\接口需求\2018\微信公众号\OnlineEducation\SodaEnglish)
+[INFO ][20181018 21:48:39,016][SpringApplication:593] No active profile set, falling back to default profiles: default
+[INFO ][20181018 21:48:39,498][AbstractApplicationContext:583] Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@7cbd213e: startup date [Thu Oct 18 21:48:39 CST 2018]; root of context hierarchy
+[INFO ][20181018 21:48:39,600][Version:30] HV000001: Hibernate Validator 5.3.5.Final
+[INFO ][20181018 21:48:41,802][TomcatEmbeddedServletContainer:89] Tomcat initialized with port(s): 80 (http)
+[INFO ][20181018 21:48:42,043][EmbeddedWebApplicationContext:276] Root WebApplicationContext: initialization completed in 2574 ms
+[INFO ][20181018 21:48:42,281][AbstractFilterRegistrationBean:258] Mapping filter: 'characterEncodingFilter' to: [/*]
+[INFO ][20181018 21:48:42,282][AbstractFilterRegistrationBean:258] Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+[INFO ][20181018 21:48:42,282][AbstractFilterRegistrationBean:258] Mapping filter: 'httpPutFormContentFilter' to: [/*]
+[INFO ][20181018 21:48:42,283][AbstractFilterRegistrationBean:258] Mapping filter: 'requestContextFilter' to: [/*]
+[INFO ][20181018 21:48:42,284][AbstractFilterRegistrationBean:271] Mapping filter: 'MyFilter' to urls: [/*]
+[INFO ][20181018 21:48:42,284][AbstractFilterRegistrationBean:258] Mapping filter: 'remoteIpFilter' to: [/*]
+[INFO ][20181018 21:48:42,285][ServletRegistrationBean:190] Mapping servlet: 'dispatcherServlet' to [/]
+[INFO ][20181018 21:48:42,693][RequestMappingHandlerAdapter:534] Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@7cbd213e: startup date [Thu Oct 18 21:48:39 CST 2018]; root of context hierarchy
+[INFO ][20181018 21:48:42,785][AbstractHandlerMethodMapping$MappingRegistry:543] Mapped "{[/buynow]}" onto public java.lang.String com.yucheng.controller.BuyNowController.checkApply()
+[INFO ][20181018 21:48:42,789][AbstractHandlerMethodMapping$MappingRegistry:543] Mapped "{[/core],methods=[GET],produces=[application/json;charset=UTF-8]}" onto public java.lang.String com.yucheng.controller.CoreController.doGet(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) throws java.io.IOException
+[INFO ][20181018 21:48:42,791][AbstractHandlerMethodMapping$MappingRegistry:543] Mapped "{[/core],methods=[POST],produces=[application/json;charset=UTF-8]}" onto public java.lang.String com.yucheng.controller.CoreController.doPost(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) throws java.io.IOException
+[INFO ][20181018 21:48:42,794][AbstractHandlerMethodMapping$MappingRegistry:543] Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+[INFO ][20181018 21:48:42,795][AbstractHandlerMethodMapping$MappingRegistry:543] Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+[INFO ][20181018 21:48:42,855][AbstractUrlHandlerMapping:362] Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[INFO ][20181018 21:48:42,856][AbstractUrlHandlerMapping:362] Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[INFO ][20181018 21:48:42,922][AbstractUrlHandlerMapping:362] Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[INFO ][20181018 21:48:43,728][MBeanExporter:431] Registering beans for JMX exposure on startup
+[INFO ][20181018 21:48:43,738][DefaultLifecycleProcessor$LifecycleGroup:343] Starting beans in phase 2147483647
+[INFO ][20181018 21:48:43,831][TomcatEmbeddedServletContainer:201] Tomcat started on port(s): 80 (http)
+[INFO ][20181018 21:48:43,840][StartupInfoLogger:57] Started Application in 5.318 seconds (JVM running for 5.952)
+[INFO ][20181018 22:28:39,238][StartupInfoLogger:48] Starting Application on YohannZhang with PID 24484 (started by echo in C:\工作目录\D盘\需求开发\接口需求\2018\微信公众号\OnlineEducation\SodaEnglish)
+[INFO ][20181018 22:28:39,241][SpringApplication:593] No active profile set, falling back to default profiles: default
+[INFO ][20181018 22:28:39,695][AbstractApplicationContext:583] Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@7cbd213e: startup date [Thu Oct 18 22:28:39 CST 2018]; root of context hierarchy
+[INFO ][20181018 22:28:39,793][Version:30] HV000001: Hibernate Validator 5.3.5.Final
+[INFO ][20181018 22:28:41,767][TomcatEmbeddedServletContainer:89] Tomcat initialized with port(s): 80 (http)
+[INFO ][20181018 22:28:41,966][EmbeddedWebApplicationContext:276] Root WebApplicationContext: initialization completed in 2274 ms
+[INFO ][20181018 22:28:42,222][AbstractFilterRegistrationBean:258] Mapping filter: 'characterEncodingFilter' to: [/*]
+[INFO ][20181018 22:28:42,223][AbstractFilterRegistrationBean:258] Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+[INFO ][20181018 22:28:42,224][AbstractFilterRegistrationBean:258] Mapping filter: 'httpPutFormContentFilter' to: [/*]
+[INFO ][20181018 22:28:42,224][AbstractFilterRegistrationBean:258] Mapping filter: 'requestContextFilter' to: [/*]
+[INFO ][20181018 22:28:42,225][AbstractFilterRegistrationBean:271] Mapping filter: 'MyFilter' to urls: [/*]
+[INFO ][20181018 22:28:42,225][AbstractFilterRegistrationBean:258] Mapping filter: 'remoteIpFilter' to: [/*]
+[INFO ][20181018 22:28:42,225][ServletRegistrationBean:190] Mapping servlet: 'dispatcherServlet' to [/]
+[INFO ][20181018 22:28:42,602][RequestMappingHandlerAdapter:534] Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@7cbd213e: startup date [Thu Oct 18 22:28:39 CST 2018]; root of context hierarchy
+[INFO ][20181018 22:28:42,719][AbstractHandlerMethodMapping$MappingRegistry:543] Mapped "{[/buynow]}" onto public java.lang.String com.yucheng.controller.BuyNowController.checkApply()
+[INFO ][20181018 22:28:42,723][AbstractHandlerMethodMapping$MappingRegistry:543] Mapped "{[/core],methods=[GET],produces=[application/json;charset=UTF-8]}" onto public java.lang.String com.yucheng.controller.CoreController.doGet(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) throws java.io.IOException
+[INFO ][20181018 22:28:42,725][AbstractHandlerMethodMapping$MappingRegistry:543] Mapped "{[/core],methods=[POST],produces=[application/json;charset=UTF-8]}" onto public java.lang.String com.yucheng.controller.CoreController.doPost(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) throws java.io.IOException
+[INFO ][20181018 22:28:42,729][AbstractHandlerMethodMapping$MappingRegistry:543] Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+[INFO ][20181018 22:28:42,730][AbstractHandlerMethodMapping$MappingRegistry:543] Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+[INFO ][20181018 22:28:42,774][AbstractUrlHandlerMapping:362] Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[INFO ][20181018 22:28:42,775][AbstractUrlHandlerMapping:362] Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[INFO ][20181018 22:28:42,872][AbstractUrlHandlerMapping:362] Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[INFO ][20181018 22:28:43,704][MBeanExporter:431] Registering beans for JMX exposure on startup
+[INFO ][20181018 22:28:43,714][DefaultLifecycleProcessor$LifecycleGroup:343] Starting beans in phase 2147483647
+[INFO ][20181018 22:28:43,786][TomcatEmbeddedServletContainer:201] Tomcat started on port(s): 80 (http)
+[INFO ][20181018 22:28:43,793][StartupInfoLogger:57] Started Application in 4.998 seconds (JVM running for 5.62)
+[INFO ][20181018 22:28:58,693][FrameworkServlet:489] FrameworkServlet 'dispatcherServlet': initialization started
+[INFO ][20181018 22:28:58,723][FrameworkServlet:508] FrameworkServlet 'dispatcherServlet': initialization completed in 30 ms

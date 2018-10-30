@@ -373,42 +373,30 @@ public class AdvancedUtil {
 	}
 
 	/**
-	 * 锟斤拷取锟矫伙拷锟斤拷息
+	 * 获取用户信息
 	 * 
-	 * @param accessToken 锟接口凤拷锟斤拷凭证
-	 * @param openId 锟矫伙拷锟斤拷识
+	 * @param accessToken 密钥
+	 * @param openId 用户openid
 	 * @return WeixinUserInfo
 	 */
 	public static WeixinUserInfo getUserInfo(String accessToken, String openId) {
 		WeixinUserInfo weixinUserInfo = null;
-		// 拼锟斤拷锟斤拷锟斤拷锟街�
 		String requestUrl = "https://api.weixin.qq.com/cgi-bin/user/info?access_token=ACCESS_TOKEN&openid=OPENID";
 		requestUrl = requestUrl.replace("ACCESS_TOKEN", accessToken).replace("OPENID", openId);
-		// 锟斤拷取锟矫伙拷锟斤拷息
 		JSONObject jsonObject = CommonUtil.httpsRequest(requestUrl, "GET", null);
 		  System.out.println(jsonObject.toString());
 		if (null != jsonObject) {
 			try {
 				weixinUserInfo = new WeixinUserInfo();
-				// 锟矫伙拷锟侥憋拷识
 				weixinUserInfo.setOpenId(jsonObject.getString("openid"));
-				// 锟斤拷注状态锟斤拷1锟角癸拷注锟斤拷0锟斤拷未锟斤拷注锟斤拷锟斤拷未锟斤拷注时锟斤拷取锟斤拷锟斤拷锟斤拷锟斤拷锟斤拷息
 				weixinUserInfo.setSubscribe(jsonObject.getInt("subscribe"));
-				// 锟矫伙拷锟斤拷注时锟斤拷
 				weixinUserInfo.setSubscribeTime(jsonObject.getString("subscribe_time"));
-				// 锟角筹拷
 				weixinUserInfo.setNickname(jsonObject.getString("nickname"));
-				// 锟矫伙拷锟斤拷锟皆憋拷1锟斤拷锟斤拷锟皆ｏ拷2锟斤拷女锟皆ｏ拷0锟斤拷未知锟斤拷
 				weixinUserInfo.setSex(jsonObject.getInt("sex"));
-				// 锟矫伙拷锟斤拷锟节癸拷锟斤拷
 				weixinUserInfo.setCountry(jsonObject.getString("country"));
-				// 锟矫伙拷锟斤拷锟斤拷省锟斤拷
 				weixinUserInfo.setProvince(jsonObject.getString("province"));
-				// 锟矫伙拷锟斤拷锟节筹拷锟斤拷
 				weixinUserInfo.setCity(jsonObject.getString("city"));
-				// 锟矫伙拷锟斤拷锟斤拷锟皆ｏ拷锟斤拷锟斤拷锟斤拷锟斤拷为zh_CN
 				weixinUserInfo.setLanguage(jsonObject.getString("language"));
-				// 锟矫伙拷头锟斤拷
 				weixinUserInfo.setHeadImgUrl(jsonObject.getString("headimgurl"));
 			} catch (Exception e) {
 				if (0 == weixinUserInfo.getSubscribe()) {

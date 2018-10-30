@@ -1,0 +1,84 @@
+[INFO ][20181029 20:29:27,876][StartupInfoLogger:48] Starting Application on YohannZhang with PID 14260 (started by echo in C:\工作目录\D盘\需求开发\接口需求\2018\微信公众号\OnlineEducation\SodaEnglish)
+[INFO ][20181029 20:29:27,882][SpringApplication:593] No active profile set, falling back to default profiles: default
+[INFO ][20181029 20:29:28,193][AbstractApplicationContext:583] Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@28ac3dc3: startup date [Mon Oct 29 20:29:28 CST 2018]; root of context hierarchy
+[INFO ][20181029 20:29:28,518][Version:30] HV000001: Hibernate Validator 5.3.5.Final
+[INFO ][20181029 20:29:30,338][TomcatEmbeddedServletContainer:89] Tomcat initialized with port(s): 80 (http)
+[INFO ][20181029 20:29:30,518][EmbeddedWebApplicationContext:276] Root WebApplicationContext: initialization completed in 2329 ms
+[INFO ][20181029 20:29:30,733][AbstractFilterRegistrationBean:258] Mapping filter: 'characterEncodingFilter' to: [/*]
+[INFO ][20181029 20:29:30,734][AbstractFilterRegistrationBean:258] Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+[INFO ][20181029 20:29:30,734][AbstractFilterRegistrationBean:258] Mapping filter: 'httpPutFormContentFilter' to: [/*]
+[INFO ][20181029 20:29:30,735][AbstractFilterRegistrationBean:258] Mapping filter: 'requestContextFilter' to: [/*]
+[INFO ][20181029 20:29:30,735][AbstractFilterRegistrationBean:271] Mapping filter: 'MyFilter' to urls: [/*]
+[INFO ][20181029 20:29:30,735][AbstractFilterRegistrationBean:258] Mapping filter: 'corsFilter' to: [/*]
+[INFO ][20181029 20:29:30,736][AbstractFilterRegistrationBean:258] Mapping filter: 'remoteIpFilter' to: [/*]
+[INFO ][20181029 20:29:30,736][ServletRegistrationBean:190] Mapping servlet: 'dispatcherServlet' to [/]
+[INFO ][20181029 20:29:31,120][RequestMappingHandlerAdapter:534] Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@28ac3dc3: startup date [Mon Oct 29 20:29:28 CST 2018]; root of context hierarchy
+[INFO ][20181029 20:29:31,217][AbstractHandlerMethodMapping$MappingRegistry:543] Mapped "{[/word]}" onto public java.lang.String com.yucheng.controller.ActileController.checkApply()
+[INFO ][20181029 20:29:31,220][AbstractHandlerMethodMapping$MappingRegistry:543] Mapped "{[/buynow]}" onto public org.springframework.web.servlet.ModelAndView com.yucheng.controller.BuyNowController.buyNow(java.lang.String) throws java.lang.Exception
+[INFO ][20181029 20:29:31,221][AbstractHandlerMethodMapping$MappingRegistry:543] Mapped "{[/calendar]}" onto public java.lang.String com.yucheng.controller.CalendarController.checkApply()
+[INFO ][20181029 20:29:31,224][AbstractHandlerMethodMapping$MappingRegistry:543] Mapped "{[/core],methods=[GET],produces=[application/json;charset=UTF-8]}" onto public java.lang.String com.yucheng.controller.CoreController.doGet(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) throws java.io.IOException
+[INFO ][20181029 20:29:31,226][AbstractHandlerMethodMapping$MappingRegistry:543] Mapped "{[/core],methods=[POST],produces=[application/json;charset=UTF-8]}" onto public java.lang.String com.yucheng.controller.CoreController.doPost(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) throws java.io.IOException
+[INFO ][20181029 20:29:31,228][AbstractHandlerMethodMapping$MappingRegistry:543] Mapped "{[/getSignJson],methods=[GET],produces=[application/json;charset=UTF-8]}" onto public java.lang.String com.yucheng.controller.GetUsrSignController.getSingJson(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) throws java.io.IOException
+[INFO ][20181029 20:29:31,229][AbstractHandlerMethodMapping$MappingRegistry:543] Mapped "{[/me]}" onto public java.lang.String com.yucheng.controller.IndexController.checkApply()
+[INFO ][20181029 20:29:31,229][AbstractHandlerMethodMapping$MappingRegistry:543] Mapped "{[/info]}" onto public java.lang.String com.yucheng.controller.InfoController.checkApply()
+[INFO ][20181029 20:29:31,231][AbstractHandlerMethodMapping$MappingRegistry:543] Mapped "{[/video]}" onto public java.lang.String com.yucheng.controller.MainLessonController.buyNow(java.lang.String)
+[INFO ][20181029 20:29:31,232][AbstractHandlerMethodMapping$MappingRegistry:543] Mapped "{[/index]}" onto public java.lang.String com.yucheng.controller.MeController.checkApply()
+[INFO ][20181029 20:29:31,233][AbstractHandlerMethodMapping$MappingRegistry:543] Mapped "{[/redirect],methods=[GET]}" onto public void com.yucheng.controller.RedirectController.doGet(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) throws java.io.IOException
+[INFO ][20181029 20:29:31,236][AbstractHandlerMethodMapping$MappingRegistry:543] Mapped "{[/test],methods=[GET],produces=[application/json;charset=UTF-8]}" onto public java.lang.String com.yucheng.controller.TestController.doGet(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) throws java.io.IOException
+[INFO ][20181029 20:29:31,237][AbstractHandlerMethodMapping$MappingRegistry:543] Mapped "{[/test/test],methods=[POST],produces=[application/json;charset=UTF-8]}" onto public java.lang.String com.yucheng.controller.TestController.doPost(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) throws java.io.IOException
+[INFO ][20181029 20:29:31,238][AbstractHandlerMethodMapping$MappingRegistry:543] Mapped "{[/mainlesson]}" onto public java.lang.String com.yucheng.controller.VideoController.buyNow(java.lang.String)
+[INFO ][20181029 20:29:31,239][AbstractHandlerMethodMapping$MappingRegistry:543] Mapped "{[/vip]}" onto public org.springframework.web.servlet.ModelAndView com.yucheng.controller.VipController.vip(java.lang.String) throws java.lang.Exception
+[INFO ][20181029 20:29:31,241][AbstractHandlerMethodMapping$MappingRegistry:543] Mapped "{[/actile]}" onto public java.lang.String com.yucheng.controller.WordController.checkApply()
+[INFO ][20181029 20:29:31,244][AbstractHandlerMethodMapping$MappingRegistry:543] Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+[INFO ][20181029 20:29:31,245][AbstractHandlerMethodMapping$MappingRegistry:543] Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+[INFO ][20181029 20:29:31,291][AbstractUrlHandlerMapping:362] Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[INFO ][20181029 20:29:31,291][AbstractUrlHandlerMapping:362] Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[INFO ][20181029 20:29:31,342][AbstractUrlHandlerMapping:362] Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[INFO ][20181029 20:29:32,010][MBeanExporter:431] Registering beans for JMX exposure on startup
+[INFO ][20181029 20:29:32,020][DefaultLifecycleProcessor$LifecycleGroup:343] Starting beans in phase 2147483647
+[INFO ][20181029 20:29:32,103][TomcatEmbeddedServletContainer:201] Tomcat started on port(s): 80 (http)
+[INFO ][20181029 20:29:32,108][StartupInfoLogger:57] Started Application in 4.607 seconds (JVM running for 5.151)
+[INFO ][20181029 20:29:39,052][FrameworkServlet:489] FrameworkServlet 'dispatcherServlet': initialization started
+[INFO ][20181029 20:29:39,077][FrameworkServlet:508] FrameworkServlet 'dispatcherServlet': initialization completed in 25 ms
+[INFO ][20181029 20:31:12,988][StartupInfoLogger:48] Starting Application on YohannZhang with PID 15052 (started by echo in C:\工作目录\D盘\需求开发\接口需求\2018\微信公众号\OnlineEducation\SodaEnglish)
+[INFO ][20181029 20:31:12,990][SpringApplication:593] No active profile set, falling back to default profiles: default
+[INFO ][20181029 20:31:13,354][AbstractApplicationContext:583] Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@28ac3dc3: startup date [Mon Oct 29 20:31:13 CST 2018]; root of context hierarchy
+[INFO ][20181029 20:31:13,564][Version:30] HV000001: Hibernate Validator 5.3.5.Final
+[INFO ][20181029 20:31:15,349][TomcatEmbeddedServletContainer:89] Tomcat initialized with port(s): 80 (http)
+[INFO ][20181029 20:31:15,535][EmbeddedWebApplicationContext:276] Root WebApplicationContext: initialization completed in 2200 ms
+[INFO ][20181029 20:31:15,758][AbstractFilterRegistrationBean:258] Mapping filter: 'characterEncodingFilter' to: [/*]
+[INFO ][20181029 20:31:15,759][AbstractFilterRegistrationBean:258] Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+[INFO ][20181029 20:31:15,759][AbstractFilterRegistrationBean:258] Mapping filter: 'httpPutFormContentFilter' to: [/*]
+[INFO ][20181029 20:31:15,760][AbstractFilterRegistrationBean:258] Mapping filter: 'requestContextFilter' to: [/*]
+[INFO ][20181029 20:31:15,760][AbstractFilterRegistrationBean:271] Mapping filter: 'MyFilter' to urls: [/*]
+[INFO ][20181029 20:31:15,760][AbstractFilterRegistrationBean:258] Mapping filter: 'corsFilter' to: [/*]
+[INFO ][20181029 20:31:15,761][AbstractFilterRegistrationBean:258] Mapping filter: 'remoteIpFilter' to: [/*]
+[INFO ][20181029 20:31:15,761][ServletRegistrationBean:190] Mapping servlet: 'dispatcherServlet' to [/]
+[INFO ][20181029 20:31:16,134][RequestMappingHandlerAdapter:534] Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@28ac3dc3: startup date [Mon Oct 29 20:31:13 CST 2018]; root of context hierarchy
+[INFO ][20181029 20:31:16,234][AbstractHandlerMethodMapping$MappingRegistry:543] Mapped "{[/word]}" onto public java.lang.String com.yucheng.controller.ActileController.checkApply()
+[INFO ][20181029 20:31:16,237][AbstractHandlerMethodMapping$MappingRegistry:543] Mapped "{[/buynow]}" onto public org.springframework.web.servlet.ModelAndView com.yucheng.controller.BuyNowController.buyNow(java.lang.String) throws java.lang.Exception
+[INFO ][20181029 20:31:16,238][AbstractHandlerMethodMapping$MappingRegistry:543] Mapped "{[/calendar]}" onto public java.lang.String com.yucheng.controller.CalendarController.checkApply()
+[INFO ][20181029 20:31:16,241][AbstractHandlerMethodMapping$MappingRegistry:543] Mapped "{[/core],methods=[GET],produces=[application/json;charset=UTF-8]}" onto public java.lang.String com.yucheng.controller.CoreController.doGet(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) throws java.io.IOException
+[INFO ][20181029 20:31:16,242][AbstractHandlerMethodMapping$MappingRegistry:543] Mapped "{[/core],methods=[POST],produces=[application/json;charset=UTF-8]}" onto public java.lang.String com.yucheng.controller.CoreController.doPost(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) throws java.io.IOException
+[INFO ][20181029 20:31:16,243][AbstractHandlerMethodMapping$MappingRegistry:543] Mapped "{[/getSignJson],methods=[GET],produces=[application/json;charset=UTF-8]}" onto public java.lang.String com.yucheng.controller.GetUsrSignController.getSingJson(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) throws java.io.IOException
+[INFO ][20181029 20:31:16,244][AbstractHandlerMethodMapping$MappingRegistry:543] Mapped "{[/me]}" onto public java.lang.String com.yucheng.controller.IndexController.checkApply()
+[INFO ][20181029 20:31:16,245][AbstractHandlerMethodMapping$MappingRegistry:543] Mapped "{[/info]}" onto public java.lang.String com.yucheng.controller.InfoController.checkApply()
+[INFO ][20181029 20:31:16,247][AbstractHandlerMethodMapping$MappingRegistry:543] Mapped "{[/video]}" onto public java.lang.String com.yucheng.controller.MainLessonController.buyNow(java.lang.String)
+[INFO ][20181029 20:31:16,248][AbstractHandlerMethodMapping$MappingRegistry:543] Mapped "{[/index]}" onto public java.lang.String com.yucheng.controller.MeController.checkApply()
+[INFO ][20181029 20:31:16,249][AbstractHandlerMethodMapping$MappingRegistry:543] Mapped "{[/redirect],methods=[GET]}" onto public void com.yucheng.controller.RedirectController.doGet(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) throws java.io.IOException
+[INFO ][20181029 20:31:16,251][AbstractHandlerMethodMapping$MappingRegistry:543] Mapped "{[/test],methods=[GET],produces=[application/json;charset=UTF-8]}" onto public java.lang.String com.yucheng.controller.TestController.doGet(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) throws java.io.IOException
+[INFO ][20181029 20:31:16,252][AbstractHandlerMethodMapping$MappingRegistry:543] Mapped "{[/test/test],methods=[POST],produces=[application/json;charset=UTF-8]}" onto public java.lang.String com.yucheng.controller.TestController.doPost(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) throws java.io.IOException
+[INFO ][20181029 20:31:16,253][AbstractHandlerMethodMapping$MappingRegistry:543] Mapped "{[/mainlesson]}" onto public java.lang.String com.yucheng.controller.VideoController.buyNow(java.lang.String)
+[INFO ][20181029 20:31:16,254][AbstractHandlerMethodMapping$MappingRegistry:543] Mapped "{[/vip]}" onto public org.springframework.web.servlet.ModelAndView com.yucheng.controller.VipController.vip(java.lang.String) throws java.lang.Exception
+[INFO ][20181029 20:31:16,256][AbstractHandlerMethodMapping$MappingRegistry:543] Mapped "{[/actile]}" onto public java.lang.String com.yucheng.controller.WordController.checkApply()
+[INFO ][20181029 20:31:16,259][AbstractHandlerMethodMapping$MappingRegistry:543] Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+[INFO ][20181029 20:31:16,260][AbstractHandlerMethodMapping$MappingRegistry:543] Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+[INFO ][20181029 20:31:16,311][AbstractUrlHandlerMapping:362] Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[INFO ][20181029 20:31:16,312][AbstractUrlHandlerMapping:362] Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[INFO ][20181029 20:31:16,360][AbstractUrlHandlerMapping:362] Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[INFO ][20181029 20:31:17,048][MBeanExporter:431] Registering beans for JMX exposure on startup
+[INFO ][20181029 20:31:17,056][DefaultLifecycleProcessor$LifecycleGroup:343] Starting beans in phase 2147483647
+[INFO ][20181029 20:31:17,131][TomcatEmbeddedServletContainer:201] Tomcat started on port(s): 80 (http)
+[INFO ][20181029 20:31:17,138][StartupInfoLogger:57] Started Application in 4.508 seconds (JVM running for 5.045)
+[INFO ][20181029 20:31:17,409][FrameworkServlet:489] FrameworkServlet 'dispatcherServlet': initialization started
+[INFO ][20181029 20:31:17,431][FrameworkServlet:508] FrameworkServlet 'dispatcherServlet': initialization completed in 22 ms

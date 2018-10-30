@@ -1,32 +1,17 @@
 package com.yucheng.pojo;
 
 
-/**
- * ΢���û��Ļ�����Ϣ
- * 
- * @author liufeng
- * @date 2013-11-09
- */
+
 public class WeixinUserInfo {
-	// �û��ı�ʶ
 	private String openId;
-	// ��ע״̬��1�ǹ�ע��0��δ��ע����δ��עʱ��ȡ����������Ϣ
 	private int subscribe;
-	// �û���עʱ�䣬Ϊʱ���������û�����ι�ע����ȡ����עʱ��
 	private String subscribeTime;
-	// �ǳ�
 	private String nickname;
-	// �û����Ա�1�����ԣ�2��Ů�ԣ�0��δ֪��
 	private int sex;
-	// �û����ڹ���
 	private String country;
-	// �û�����ʡ��
 	private String province;
-	// �û����ڳ���
 	private String city;
-	// �û������ԣ���������Ϊzh_CN
 	private String language;
-	// �û�ͷ��
 	private String headImgUrl;
 
 	public String getOpenId() {
@@ -108,4 +93,12 @@ public class WeixinUserInfo {
 	public void setHeadImgUrl(String headImgUrl) {
 		this.headImgUrl = headImgUrl;
 	}
+
+	@Override
+	public String toString() {
+		return "WeixinUserInfo [openId=" + openId + ", subscribe=" + subscribe + ", subscribeTime=" + subscribeTime
+				+ ", nickname=" + nickname + ", sex=" + sex + ", country=" + country + ", province=" + province
+				+ ", city=" + city + ", language=" + language + ", headImgUrl=" + headImgUrl + "]";
+	}
+	
 }

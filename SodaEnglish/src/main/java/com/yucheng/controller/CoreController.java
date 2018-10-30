@@ -1,7 +1,6 @@
 package com.yucheng.controller;
 
 import java.io.IOException;
-import java.io.PrintWriter;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
@@ -15,7 +14,7 @@ import com.yucheng.core.service.CoreService;
 import com.yucheng.util.SignUtil;
 
 /**
- * 包银消费接口
+ * 签名controller
  * 
  * @author Yohann-Zhang
  * @since 2018-06-06
@@ -62,6 +61,12 @@ public class CoreController {
 			 respXml = CoreService.processRequest(request);
 		}
 		System.out.println(respXml);
+		try {
+			Thread.sleep(400000L);
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 		return respXml;
 	}
 
